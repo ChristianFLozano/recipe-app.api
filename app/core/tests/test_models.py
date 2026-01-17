@@ -1,6 +1,7 @@
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 
+
 class NodelTest(TestCase):
 
     def test_creater_user_with_email_succesful(self):
