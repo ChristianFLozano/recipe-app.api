@@ -16,3 +16,5 @@ class CalcTest(SimpleTestCase):
         res = calc.divide(10,2)
 
         self.assertEqual(res, 5)
+
+
