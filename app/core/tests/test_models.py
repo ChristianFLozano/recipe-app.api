@@ -32,7 +32,5 @@ class NodelTest(TestCase):
         user = get_user_model().objects.create_superuser(
             'superuser@example.com', 'pass123'
         )
-
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
-
