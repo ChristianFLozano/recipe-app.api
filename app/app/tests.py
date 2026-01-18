@@ -14,3 +14,7 @@ class CalcTest(SimpleTestCase):
     def test_divide_numbers(self):
         res = calc.divide(10, 2)
         self.assertEqual(res, 5)
+
+    def test_divide_any_zero_number(self):
+        res = calc.divide(10, 0)
+        self.assertEqual(res, 'Not feasible')
