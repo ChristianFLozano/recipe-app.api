@@ -2,7 +2,7 @@ from django.test import TestCase
 from django.contrib.auth import get_user_model
 
 
-class NodelTest(TestCase):
+class ModelTest(TestCase):
 
     def test_creater_user_with_email_succesful(self):
         email = 'test@example.com'
@@ -18,8 +18,8 @@ class NodelTest(TestCase):
         sample_email = [
             ['test1@EXAMPLE.com', 'test1@example.com'],
             ['Test2@Example.com', 'Test2@example.com'],
-            ['TEST3@EXAMPLE.COM', 'TEST3@example.com'],
-            ['test4@example.com', 'test4@example.com'],
+            ['TEST3@EXAMPLE.com', 'TEST3@example.com'],
+            ['test4@example.COM', 'test4@example.com'],
         ]
         for email, expected in sample_email:
             user = get_user_model().objects.create_user(email, 'sample123')
